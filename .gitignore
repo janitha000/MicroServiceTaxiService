@@ -6,3 +6,5 @@
 /TaxiMicroservice/TaxiMicroservice.Auth/obj
 /TaxiMicroservice/TaxiMicroService.Drivers/obj
 /TaxiMicroservice/TaxiMicroService.Locations/obj
+/TaxiMicroservice/TaxiMicroservice.Auth/bin/Debug/netcoreapp2.1
+/TaxiMicroservice/.vs/config
