@@ -17,8 +17,33 @@ namespace TaxiMicroservice.Auth.Service
 
         public async Task<ApiResult> LoginAsync(User user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var cognito = new AmazonCognitoIdentityProviderClient(_region);
+                var request = new AdminInitiateAuthRequest
+                {
+                    UserPoolId = "us-east-1_gf5MTchOu",
+                    ClientId = _clientId,
+                    AuthFlow = AuthFlowType.ADMIN_NO_SRP_AUTH
+                };
 
+                request.AuthParameters.Add("USERNAME", user.Name);
+                request.AuthParameters.Add("PASSWORD", user.Password);
+                var response = await cognito.AdminInitiateAuthAsync(request);
+                if (response.HttpStatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    return new ApiResult(true, response.AuthenticationResult.IdToken);
+                }
+                else
+                {
+                    return new ApiResult(false, "Login failed");
+                }
+
+            }
+            catch(Exception ex)
+            {
+                return new ApiResult(false, ex);
+            }
 
         }
 
