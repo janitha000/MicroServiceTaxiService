@@ -1,22 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace TaxiMicroService.Drivers.Entities
 {
-    public class Driver : IEntityBase
+    public class DriverResource
     {
-        [Key]
-        public int Id { get; set; }
+        [Required]
         public string FirstName { get; set; }
+        [Required]
         public string LastName { get; set; }
+        [Required]
         public string NIC { get; set; }
+        [Required]
         public int Age { get; set; }
-
-        [ForeignKey("Vehicle")]
         public string VehicleId { get; set; }
     }
 }

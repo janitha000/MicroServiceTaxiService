@@ -7,6 +7,6 @@ namespace TaxiMicroService.Drivers.Entities
 {
     public interface IEntityBase
     {
-        string Id { get; set; }
+        int Id { get; set; }
     }
 }

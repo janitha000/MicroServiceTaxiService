@@ -4,22 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TaxiMicroService.Drivers.Entities
+namespace TaxiMicroService.Drivers.Entities.Resources
 {
-    public class Vehicle : IEntityBase
+    public class VehicleResource
     {
-        [Key]
-
-        public int Id { get; set; }
+        [Required]
         public string Number { get; set; }
+        [Required]
         public VehicleTypes VehicleType { get; set; }
-    }
-
-    public enum VehicleTypes
-    {
-        Car,
-        Van,
-        ThreeWheel,
-        Bus
     }
 }

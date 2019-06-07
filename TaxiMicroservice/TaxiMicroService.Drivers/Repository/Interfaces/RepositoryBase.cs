@@ -58,15 +58,15 @@ namespace TaxiMicroService.Drivers.Repository
             return entities;
         }
 
-        public async Task<T> GetSingle(string id)
+        public async Task<T> GetSingle(int  id)
         {
             T entity = await _context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
             return entity;
         }
 
-        public T GetSingle(Expression<Func<T, bool>> predicate)
+        public Task<T> GetSingle(Expression<Func<T, bool>> predicate)
         {
-            return _context.Set<T>().FirstOrDefault(predicate);
+            return _context.Set<T>().FirstOrDefaultAsync(predicate);
         }
 
         public async Task Update(T entity)
