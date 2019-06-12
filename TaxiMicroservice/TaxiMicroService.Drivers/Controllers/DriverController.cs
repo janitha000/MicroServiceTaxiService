@@ -50,7 +50,7 @@ namespace TaxiMicroService.Drivers.Controllers
                 if (string.IsNullOrEmpty(id))
                     return BadRequest("Id is null");
 
-                Driver driver = await driverService.GetDriver(Int32.Parse(id));
+                Driver driver = await driverService.GetDriver(int.Parse(id));
                 return Ok(driver);
             }
             catch(Exception ex)
@@ -76,7 +76,23 @@ namespace TaxiMicroService.Drivers.Controllers
             {
                 return Ok($"Server error {ex.Message}");
             }
+        }
 
+        [HttpPut]
+        public async Task<ActionResult> UpdateDeiver([FromBody] DriverResource resource)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState.GetErrorMessages());
+
+                Driver driver = await driverService.UpdateDriver(resource);
+                return Ok(driver);
+            }
+            catch(Exception ex)
+            {
+                return Ok(ex);
+            }
         }
     }
 }

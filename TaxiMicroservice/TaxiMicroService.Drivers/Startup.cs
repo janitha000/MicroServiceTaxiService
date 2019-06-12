@@ -31,6 +31,7 @@ namespace TaxiMicroService.Drivers
             services.AddScoped<IDriverRepository, DriverRepository>();
             services.AddScoped<IVehicleRepository, VehicleRepository>();
             services.AddScoped<IDriverService, DriverService>();
+            services.AddScoped<IVehicleService, VehicleService>();
 
             services.AddAutoMapper();
             services.Configure<DevelopmentVariables>(Configuration.GetSection("DevelopmentVariables"));

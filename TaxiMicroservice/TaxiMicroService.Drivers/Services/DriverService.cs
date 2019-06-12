@@ -45,5 +45,12 @@ namespace TaxiMicroService.Drivers.Services
             Driver driver = await driverRepository.GetSingle(predicate);
             return driver;
         }
+
+        public async Task<Driver> UpdateDriver(DriverResource driverResource)
+        {
+            Driver driver = mapper.Map<DriverResource, Driver>(driverResource);
+            await driverRepository.Update(driver);
+            return driver;
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace TaxiMicroservice.Auth.Entities
         public ApiResult(bool status, Exception ex)
         {
             this.Status = status;
-            this.Message = $"{ex.Message} , {ex.InnerException.Message}";
+            this.Message = $"{ex.Message}";
         }
     }
 }

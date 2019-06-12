@@ -1,0 +1,6 @@
+2019-06-11 11:07:51.4136||DEBUG|TaxiMicroservice.Auth.Controllers.AuthController|Register endpoint called string , string |url: http://localhost/api/Auth/login|action: Login
+2019-06-11 11:07:51.4457||DEBUG|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|Called for signin |url: http://localhost/api/Auth/login|action: Login
+2019-06-11 11:07:55.8743||ERROR|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|login failed with exception. User does not exist. |url: http://localhost/api/Auth/login|action: Login
+2019-06-11 15:11:10.1205||DEBUG|TaxiMicroservice.Auth.Controllers.AuthController|Register endpoint called string , string |url: http://localhost/api/Auth/login|action: Login
+2019-06-11 15:11:10.1405||DEBUG|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|Called for signin |url: http://localhost/api/Auth/login|action: Login
+2019-06-11 15:11:16.7719||ERROR|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|login failed with exception. User does not exist. |url: http://localhost/api/Auth/login|action: Login

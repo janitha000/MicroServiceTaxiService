@@ -13,5 +13,6 @@ namespace TaxiMicroService.Drivers.Services
         Task<Driver> GetDriverAsync(Expression<Func<Driver, bool>> predicate);
         Task<List<Driver>> GetAllDrivers();
         Task<Driver> AddDriver(DriverResource driver);
+        Task<Driver> UpdateDriver(DriverResource driver);
     }
 }

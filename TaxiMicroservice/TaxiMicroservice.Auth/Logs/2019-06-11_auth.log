@@ -1,0 +1,34 @@
+2019-06-11 11:07:39.4331||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\janithat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-06-11 11:07:39.8789|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 
+2019-06-11 11:07:39.8789|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   
+2019-06-11 11:07:39.9052|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.58ms 200  
+2019-06-11 11:07:40.0408|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 162.5301ms 200 text/html 
+2019-06-11 11:07:40.7699|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   
+2019-06-11 11:07:40.9028|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 132.958ms 200 application/json;charset=utf-8 
+2019-06-11 11:07:48.0361|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login application/json-patch+json 46 
+2019-06-11 11:07:48.0970|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing action TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) 
+2019-06-11 11:07:48.3893|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) with arguments (TaxiMicroservice.Auth.Entities.Resources.SiginResource) - Validation state: Valid 
+2019-06-11 11:07:51.4136||DEBUG|TaxiMicroservice.Auth.Controllers.AuthController|Register endpoint called string , string 
+2019-06-11 11:07:51.4457||DEBUG|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|Called for signin 
+2019-06-11 11:07:55.8743||ERROR|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|login failed with exception. User does not exist. 
+2019-06-11 11:07:55.8788|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 7487.0976ms. 
+2019-06-11 11:07:55.8788|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2019-06-11 11:07:55.8959|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) in 7796.0494ms 
+2019-06-11 11:07:55.8959|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7864.3773ms 400 application/json; charset=utf-8 
+2019-06-11 15:11:04.4979||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\janithat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-06-11 15:11:05.0558|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html   
+2019-06-11 15:11:05.0558|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 
+2019-06-11 15:11:05.0764|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.7105ms 200  
+2019-06-11 15:11:05.1615|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.1173ms 200 text/html 
+2019-06-11 15:11:05.6882|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json   
+2019-06-11 15:11:05.8701|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 181.9412ms 200 application/json;charset=utf-8 
+2019-06-11 15:11:09.7641|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login application/json-patch+json 46 
+2019-06-11 15:11:09.8223|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing action TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) 
+2019-06-11 15:11:10.1205|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) with arguments (TaxiMicroservice.Auth.Entities.Resources.SiginResource) - Validation state: Valid 
+2019-06-11 15:11:10.1205||DEBUG|TaxiMicroservice.Auth.Controllers.AuthController|Register endpoint called string , string 
+2019-06-11 15:11:10.1405||DEBUG|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|Called for signin 
+2019-06-11 15:11:16.7719||ERROR|TaxiMicroservice.Auth.Service.CognitoAuthenticationService|login failed with exception. User does not exist. 
+2019-06-11 15:11:16.7759|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 6653.4599ms. 
+2019-06-11 15:11:16.7960|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'. 
+2019-06-11 15:11:16.7960|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TaxiMicroservice.Auth.Controllers.AuthController.Login (TaxiMicroservice.Auth) in 6980.9595ms 
+2019-06-11 15:11:16.8110|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7046.8134ms 400 application/json; charset=utf-8 
